@@ -1,0 +1,25 @@
+from PIL import Image, ImageFilter
+
+img = Image.open("data.jpg")
+
+blur = img.filter(ImageFilter.BLUR)
+contour = img.filter(ImageFilter.CONTOUR)
+detail = img.filter(ImageFilter.DETAIL)
+edge_enhance = img.filter(ImageFilter.EDGE_ENHANCE)
+edge_enhance_more = img.filter(ImageFilter.EDGE_ENHANCE_MORE)
+emboss = img.filter(ImageFilter.EMBOSS)
+find_edged = img.filter(ImageFilter.FIND_EDGES)
+sharpen = img.filter(ImageFilter.SHARPEN)
+smooth = img.filter(ImageFilter.SMOOTH)
+smooth_more = img.filter(ImageFilter.SMOOTH_MORE)
+
+blur.save("BLUR.jpg")
+contour.save("CONTOUR.jpg")
+detail.save("DETAIL.jpg")
+edge_enhance.save("EDGE_ENHANCE.jpg")
+edge_enhance_more.save("EDGE_ENHANCE_MORE.jpg")
+emboss.save("EMBOSS.jpg")
+find_edged.save("FIND_EDGES.jpg")
+sharpen.save("SHARPEN.jpg")
+smooth.save("SMOOTH.jpg")
+smooth_more.save("SMOOTH_MORE.jpg")
